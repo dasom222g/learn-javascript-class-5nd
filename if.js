@@ -65,3 +65,51 @@ const person = {
 
 console.log("0번째 데이터", person["name"]);
 console.log("company: ", person.company); // 닷 표기법 권장 ⭐️
+
+const messageInfo = {
+  userImage:
+    "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+  username: "맛있는 쉐프",
+  message: "안녕하세요.",
+  role: "assistant",
+};
+
+const messages = [
+  {
+    userImage:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+    username: "맛있는 쉐프",
+    message: "안녕하세요.",
+    role: "assistant",
+  },
+  {
+    userImage:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+    username: "후츠릿",
+    message: "안녕. 이름이 뭐야?",
+    role: "user",
+  },
+  {
+    userImage:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+    username: "맛있는 쉐프",
+    message: "안녕하세요.",
+    role: "assistant",
+  },
+  {
+    userImage:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+    username: "맛있는 쉐프",
+    message: "안녕하세요.",
+    role: "assistant",
+  },
+  {
+    userImage:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg",
+    username: "맛있는 쉐프",
+    message: "안녕하세요.",
+    role: "assistant",
+  },
+];
+console.log("🚀 ~ messages", messages.length);
+console.log("요소 타입: ", messages[1].message);
