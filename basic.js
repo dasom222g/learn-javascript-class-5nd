@@ -33,12 +33,31 @@ console.log("age type:", typeof age);
 // 함수
 
 // 함수 정의/선언
-function sayHello() {
+function sayHello(username, usermbti) {
   // 실행할 로직들
-  console.log("Hello world");
+  // console.log("반갑습니다. " + username + "님!" + "mbti는 " + usermbti + "이시군요");
+  // 백틱: 문자열과 변수를 손쉽게 이어주는 문법
+  console.log(`반갑습니다. ${username}님! MBTI는 ${usermbti}이시군요!`);
 }
 
 // 함수 실행/호출
-sayHello();
-sayHello();
-sayHello();
+const data = "이영규";
+sayHello("후츠릿", "ENTJ");
+sayHello(data, "INTJ");
+// 미션: 여러분의 이름과 MBTI를 넣어서 호출해주세요
+sayHello("사용자", "AAAA");
+
+// return (반환)
+function sum(num1, num2) {
+  // 두개의 값을 더한값 반환
+  return num1 + num2;
+}
+
+function double(num) {
+  return num * 2;
+}
+
+// 함수 호출
+const result = sum(22, 40); // 62
+console.log("🚀 ~ result:", result);
+console.log("double", double(result));
